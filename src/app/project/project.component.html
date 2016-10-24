@@ -1,0 +1,9 @@
+<p>
+  project works!
+</p>
+
+<div class="col-sm-6 col-md-6" *ngFor="let project of projects | async">
+        <div class="project-tile">
+          <p class="project-title">{{project.name}}</p>
+        </div>
+      </div>
