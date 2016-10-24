@@ -1,10 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule, JsonpModule } from '@angular/http';
+import { Http, HttpModule, JsonpModule } from '@angular/http';
+import { TranslateModule, TranslateStaticLoader, TranslateLoader } from 'ng2-translate';
 
 import { AppComponent } from './app.component';
 import { ProjectComponent } from './project/project.component';
+
+export function createTranslateLoader(http: Http) {
+    return new TranslateStaticLoader(http, '/assets/data', '/translation.json');
+}
 
 @NgModule({
   declarations: [
@@ -15,7 +20,12 @@ import { ProjectComponent } from './project/project.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    JsonpModule
+    JsonpModule,
+    TranslateModule.forRoot({
+      provide: TranslateLoader,
+      useFactory: (createTranslateLoader),
+      deps: [Http]
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
