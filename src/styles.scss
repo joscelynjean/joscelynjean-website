@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+header {
+  position: relative;
+  background: #00ff00 url("assets/images/background.jpg") no-repeat center center;
+  background-size: 100% auto;
+  height: 400px;
+
+  div {
+    margin: auto;
+  }
+
+  h3 {
+    text-shadow: 2px 2px #000000, -1px -1px #000000;
+  }
+
+  img {
+    display: block;
+    width: 128px;
+    height: 128px;
+    margin: auto;
+  }
+
+  ul {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    li {
+      display: inline;
+    }
+  }
+}
