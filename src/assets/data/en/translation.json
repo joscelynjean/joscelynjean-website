@@ -6,6 +6,9 @@
   "navigation": {
     "projects": "Projects"
   },
+  "presentation": {
+    "title": "Welcome to my space"
+  },
   "project": {
     "title": "My projects on Github",
     "description": "I am passionate about programming and new technologies , but I am also interested in system architecture and project management. You will find many of my initiatives on Github.",

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { TranslateService } from 'ng2-translate';
+declare var $:any;
+declare var navigator:any;
 
 @Component({
   selector: 'app-root',
@@ -8,12 +10,37 @@ import { TranslateService } from 'ng2-translate';
 })
 export class AppComponent {
   title = 'app works!';
+  isEnglishLanguage = false;
 
   constructor(translate: TranslateService) {
-        // this language will be used as a fallback when a translation isn't found in the current language
-        translate.setDefaultLang('en');
 
-         // the lang to use, if the lang isn't available, it will use the current loader to get them
-        translate.use('en');
+        // Cookie handling
+        if(!$.cookie('language')) {
+          var userLang = navigator.language || navigator.userLanguage;
+          $.cookie('language',userLang === 'fr' ? 'fr' : 'en');
+        }
+        var language = $.cookie('language');
+
+        // optional, default is "en"
+        translate.setDefaultLang(language);
+        // the lang to use, if the lang isn't available, it will use the loader defined to get them
+        translate.use(language);
+        // if you manually want to get new translations, you can call this:
+        // use the loader defined (static by default) to get the translations
+        // translate.getTranslation(userLang);
+        translate.currentLang = language;
+    }
+
+    ngOnInit() {
+      this.isEnglishLanguage = (this.getCurrentLanguage() === "en");
+    }
+
+    getCurrentLanguage() {
+      return $.cookie('language');
+    }
+
+    setCurrentLanguage(language: string) {
+      $.cookie('language', language);
+      location.reload(); // Reload page so we can apply new language
     }
 }

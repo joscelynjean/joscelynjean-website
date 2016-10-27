@@ -1,5 +1,6 @@
 <header class="valign-wrapper white-text">
-  <a id="language-toggle" class="waves-effect waves-light btn"><i class="material-icons left">language</i>Français</a>
+  <a id="language-toggle" class="waves-effect waves-light btn" *ngIf="!isEnglishLanguage" (click)="setCurrentLanguage('en')"><i class="material-icons left">language</i>English</a>
+  <a id="language-toggle" class="waves-effect waves-light btn" *ngIf="isEnglishLanguage" (click)="setCurrentLanguage('fr')"><i class="material-icons left">language</i>Français</a>
   <div class="center-align">
     <img src="assets/images/joscelyn.jpg" alt="" class="circle z-depth-3">
     <h4>Joscelyn Jean</h4>
@@ -16,6 +17,5 @@
   </ul>
 </header>
 
-<div class="container">
-  <app-project></app-project>
-</div>
+<app-presentation></app-presentation>
+<app-project></app-project>

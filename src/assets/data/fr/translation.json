@@ -1,40 +1,17 @@
 {
-  "global":{
-    "loading":"chargement..."
+  "header": {
+    "description": "Ingénieur en informatique",
+    "location": "Montréal, Québec, Canada"
   },
-  "header":{
-    "blog":"Blog",
-    "community":"Communauté",
-    "project":"Projets",
-    "resume":"Cursus"
+  "navigation": {
+    "projects": "Projets"
   },
-  "blog":{
-    "title":"Sur Blogger",
-    "loading":"Chargement de mon dernier article...",
-    "readArticle":"Lire mon article"
+  "presentation": {
+    "title": "Bienvenue sur mon espace"
   },
-  "space":{
-    "title":"Bienvenue sur mon espace",
-    "text":"Partager mes expériences et pensées avec la communauté est la principale vocation de cet espace",
-    "sharing":"Partager mes idées et mes opinions",
-    "experimenting":"Expérimenter les nouvelles technologies",
-    "available":"Rendre disponible pour le bénéfice de chacun"
-  },
-  "social":{
-    "title":"Me joindre sur les réseaux sociaux"
-  },
-  "project":{
-    "title":"Projets",
-    "summary":"Je suis un passionné de la programmation et des nouvelles technologies, mais je m'intéresse également à l'architecture de système et à la gestion de projets. Vous trouverez plusieurs de mes initiatives sur ces différents sites populaires...",
-    "importantProjects":"Voici une liste de mes projets les plus intéressants."
-  },
-  "resume":{
-    "title":"Cursus",
-    "experience":"Vous trouvez une liste d'entreprises pour lesquelles j'ai travaillé...",
-    "education":"... et écoles où j'ai étudié."
-  },
-  "footer":{
-    "join":"Pour me rejoindre",
-    "copyright":"© JoscelynJean.com. Tous droits réservés."
+  "project": {
+    "title": "Mes projects sur Github",
+    "description": "I am passionate about programming and new technologies , but I am also interested in system architecture and project management. You will find many of my initiatives on Github.",
+    "repository": "Repo"
   }
 }
