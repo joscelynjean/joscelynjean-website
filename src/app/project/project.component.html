@@ -1,14 +1,16 @@
+<div class="row center-align">
+  <h4 id="projects"><i class="fa fa-github" aria-hidden="true"></i> {{ 'project.title' | translate }}</h4>
+  <p>{{ 'project.description' | translate }}</p>
+</div>
 <div class="row">
   <div class="col s12 m6" *ngFor="let project of projects | async">
-    <div class="card blue-grey darken-1">
-      <div class="card-content white-text">
+    <div class="card">
+      <div class="card-content">
         <span class="card-title">{{project.name}}</span>
-        <p>I am a very simple card. I am good at containing small bits of information.
-        I am convenient because I require little markup to use effectively.</p>
+        <p>{{project.description}}</p>
       </div>
       <div class="card-action">
-        <a href="#">This is a link</a>
-        <a href="#">This is a link</a>
+        <a href="{{project.html_url}}">{{ 'project.repository' | translate }}</a>
       </div>
     </div>
   </div>

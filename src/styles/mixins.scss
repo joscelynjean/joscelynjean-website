@@ -1,0 +1,35 @@
+@mixin mixin-border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin mixin-transition($property, $time, $timing) {
+  -webkit-transition: $property $time $timing; /* Saf3.2+, Chrome */
+  -moz-transition: $property $time $timing; /* FF3.7+ */
+  -o-transition: $property $time $timing; /* Opera 10.5 */
+  transition: $property $time $timing;
+}
+
+@mixin mixin-image-size($size) {
+  width: $size;
+  height: $size;
+  margin: 0 auto;
+  background-size: $size $size;
+}
+
+@mixin mixin-grayscale($grayscale) {
+  -webkit-filter: grayscale($grayscale);
+  -moz-filter: grayscale($grayscale);
+  -o-filter: grayscale($grayscale);
+  -ms-filter: grayscale($grayscale);
+  filter: grayscale($grayscale);
+}
+
+@mixin mixin-brightness($brightness) {
+  -webkit-filter: brightness($brightness);
+  -moz-filter: brightness($brightness);
+  -o-filter: brightness($brightness);
+  -ms-filter: brightness($brightness);
+  filter: brightness($brightness);
+}

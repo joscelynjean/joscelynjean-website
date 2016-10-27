@@ -1,0 +1,48 @@
+header {
+  position: relative;
+  background: #00ff00 url("assets/images/background.jpg") no-repeat center center;
+  height: 450px;
+
+  #language-toggle {
+      position: absolute;
+      right: 25px;
+      top: 25px;
+  }
+
+  div {
+    margin: auto;
+  }
+
+  h4 {
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px #000000, -1px -1px #000000;
+  }
+
+  h3 {
+    text-shadow: 2px 2px #000000, -1px -1px #000000;
+  }
+
+  img {
+    display: block;
+    width: 128px;
+    height: 128px;
+    margin: auto;
+  }
+
+  #social {
+    li {
+      margin: 10px;
+    }
+  }
+
+  li {
+    display: inline;
+  }
+
+  #navigation {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}

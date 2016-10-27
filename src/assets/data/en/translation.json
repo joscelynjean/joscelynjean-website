@@ -1,40 +1,14 @@
 {
-  "global":{
-    "loading":"loading..."
+  "header": {
+    "description": "Computer engineer",
+    "location": "Montreal, Quebec, Canada"
   },
-  "header":{
-    "blog":"Blog",
-    "community":"Community",
-    "project":"Projects",
-    "resume":"Resume"
+  "navigation": {
+    "projects": "Projects"
   },
-  "blog":{
-    "title":"On Blogger",
-    "loading":"Loading my latest article...",
-    "readArticle":"Read my article"
-  },
-  "space":{
-    "title":"Welcome to my space",
-    "text":"Share my experiences and thoughts with the community is the main purpose of this space",
-    "sharing":"Share my ideas and my opinions",
-    "experimenting":"Experiment new technologies",
-    "available":"Open source"
-  },
-  "social":{
-    "title":"Join me on social networks"
-  },
-  "project":{
-    "title":"Projects",
-    "summary":"I am passionate about programming and new technologies , but I am also interested in system architecture and project management. You will find many of my initiatives on these popular sites ...",
-    "importantProjects":"Here is a list of my most interesting projects."
-  },
-  "resume":{
-    "title":"Resume",
-    "experience":"You will find a list of company I have worked for...",
-    "education":"... and schools where I have studied."
-  },
-  "footer":{
-    "join":"Contact me",
-    "copyright":"© JoscelynJean.com. All Rights Reserved."
+  "project": {
+    "title": "My projects on Github",
+    "description": "I am passionate about programming and new technologies , but I am also interested in system architecture and project management. You will find many of my initiatives on Github.",
+    "repository": "Repository"
   }
 }
