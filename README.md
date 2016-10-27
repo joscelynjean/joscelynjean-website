@@ -41,4 +41,4 @@ First, build the application in production mode :
 Then, build the docker image and run it.
 
     docker build -t joscelynjean/website:latest
-    docker run -p 80:80 joscelynjean/website
+    docker run -p 80:80 --name joscelynjean_website joscelynjean/website
