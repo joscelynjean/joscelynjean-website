@@ -2,5 +2,6 @@ language: node_js
 node_js:
   - "6.1"
 before_script:
-  - npm install -g angular-cli@1.0.0-beta.18
+  - npm install -g buffer-shims
+  - npm install -g angular-cli
 script: ng test --watch=false --browsers=PhantomJS
