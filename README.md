@@ -1,4 +1,4 @@
-# Joscelyn Jean personal website [![Build Status][travis-image]][travis-url]
+# Joscelyn Jean personal website [![Build Status](https://travis-ci.org/joscelynjean/joscelynjean-website.svg?branch=develop)](https://travis-ci.org/joscelynjean/joscelynjean-website)
 
 This is my personal website, generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.18.
 
