@@ -1,7 +1,7 @@
+/*/// <reference path="@types/jquery/index.d.ts" />*/
+
 import { Component } from '@angular/core';
 import { TranslateService } from 'ng2-translate';
-declare var $:any;
-declare var navigator:any;
 
 @Component({
   selector: 'app-root',
@@ -9,7 +9,7 @@ declare var navigator:any;
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'Joscelyn Jean';
   isEnglishLanguage = false;
 
   constructor(translate: TranslateService) {
@@ -19,7 +19,7 @@ export class AppComponent {
           var userLang = navigator.language || navigator.userLanguage;
           $.cookie('language',userLang === 'fr' ? 'fr' : 'en');
         }
-        var language = $.cookie('language');
+        var language : string = $.cookie('language');
 
         // optional, default is "en"
         translate.setDefaultLang(language);
