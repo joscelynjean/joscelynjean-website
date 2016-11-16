@@ -3,6 +3,14 @@
     "description": "Computer engineer",
     "location": "Montreal, Quebec, Canada"
   },
+  "footer": {
+    "title": "Contact me",
+    "description": "You can contact me for more informations on my projects, opportunities and others.",
+    "contact": "Contact informations",
+    "email": "info [a] joscelynjean.com",
+    "linkedin": "LinkedIn",
+    "twitter": "Twitter"
+  },
   "navigation": {
     "projects": "Projects"
   },

@@ -3,6 +3,14 @@
     "description": "Ingénieur en informatique",
     "location": "Montréal, Québec, Canada"
   },
+  "footer": {
+    "title": "Pour me rejoindre",
+    "description": "Vous pouvez me rejoindre pour des informations sur mes projets, des opportunités et autres.",
+    "contact": "Informations de contact",
+    "email": "info [a] joscelynjean.com",
+    "linkedin": "LinkedIn",
+    "twitter": "Twitter"
+  },
   "navigation": {
     "projects": "Projets"
   },
