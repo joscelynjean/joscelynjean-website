@@ -2,6 +2,9 @@
   "name": "joscelynjean-website",
   "version": "0.0.0",
   "license": "MIT",
+  "engines": {
+    "node": "6.9.1"
+  },
   "angular-cli": {},
   "scripts": {
     "postinstall" : "./node_modules/angular-cli/bin/ng build --prod",
