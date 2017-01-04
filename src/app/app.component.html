@@ -1,22 +1,25 @@
-<header class="valign-wrapper white-text">
-  <a id="language-toggle" class="waves-effect waves-light btn" *ngIf="!isEnglishLanguage" (click)="setCurrentLanguage('en')"><i class="material-icons left">language</i>English</a>
-  <a id="language-toggle" class="waves-effect waves-light btn" *ngIf="isEnglishLanguage" (click)="setCurrentLanguage('fr')"><i class="material-icons left">language</i>Français</a>
-  <div class="center-align">
-    <img src="assets/images/joscelyn.jpg" alt="" class="circle z-depth-3">
-    <h4>Joscelyn Jean</h4>
-    <h5>{{ 'header.description' | translate }}</h5>
-    <p><i class="fa fa-map-marker" aria-hidden="true"></i> {{ 'header.location' | translate }}</p>
-    <ul id="social">
-      <li><a href="https://ca.linkedin.com/in/joscelynjean"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
-      <li><a href="https://plus.google.com/u/0/103894527606731276549"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a></li>
-      <li><a href="https://twitter.com/joscelynjean"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+<header>
+  <div class="valign-container">
+    <div class="logo"></div>
+    <div>
+      <span class="firstname">Joscelyn</span>
+      <span class="lastname">Jean</span>
+    </div>
+  </div>
+  <div class="menu valign-container">
+    <ul>
+      <li>{{ 'navigation.projects' | translate }}</li>
+      <li>
+        <a id="language-toggle" class="waves-effect waves-light btn" *ngIf="!isEnglishLanguage" (click)="setCurrentLanguage('en')"><i class="material-icons left">language</i>English</a>
+        <a id="language-toggle" class="waves-effect waves-light btn" *ngIf="isEnglishLanguage" (click)="setCurrentLanguage('fr')"><i class="material-icons left">language</i>Français</a>
+      </li>
     </ul>
   </div>
-  <ul id="navigation">
-    <li><a href="#projects">{{ 'navigation.projects' | translate | uppercase }}</a></li>
-  </ul>
 </header>
 
+
+
+<app-summary></app-summary>
 <app-presentation></app-presentation>
 <app-project></app-project>
 

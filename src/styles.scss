@@ -1,7 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'styles/variables';
 @import 'styles/mixins';
 
 body, p {
   font-family: 'Roboto-Thin', sans-serif;
   font-size: 16px;
+}
+
+h1 {
+  margin: auto;
+}
+
+.parallax-container {
+  height: $parallaxHeight;
+}
+
+.parallax-content {
+  height: $parallaxHeight;
+  width: 100%;
 }

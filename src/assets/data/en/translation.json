@@ -3,6 +3,9 @@
     "description": "Computer engineer",
     "location": "Montreal, Quebec, Canada"
   },
+  "navigation": {
+    "projects": "Projects"
+  },
   "footer": {
     "title": "Contact me",
     "description": "You can contact me for more informations on my projects, opportunities and others.",
@@ -11,15 +14,14 @@
     "linkedin": "LinkedIn",
     "twitter": "Twitter"
   },
-  "navigation": {
-    "projects": "Projects"
-  },
-  "presentation": {
-    "title": "Welcome to my space"
+  "summary": {
+    "aboutMeTitle": "About me",
+    "aboutMeDescription": "I am passionate about programming and new technologies , but I am also interested in system architecture and project management.",
+    "socialNetworkTitle": "Social networks"
   },
   "project": {
-    "title": "My projects on Github",
-    "description": "I am passionate about programming and new technologies , but I am also interested in system architecture and project management. You will find many of my initiatives on Github.",
+    "title": "My projects",
+    "github": "My projects on Github",
     "repository": "Repository"
   }
 }

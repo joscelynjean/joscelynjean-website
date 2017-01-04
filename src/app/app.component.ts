@@ -35,6 +35,10 @@ export class AppComponent {
       this.isEnglishLanguage = (this.getCurrentLanguage() === "en");
     }
 
+    ngAfterViewInit() {
+      $('.parallax').parallax();
+    }
+
     getCurrentLanguage() {
       return $.cookie('language');
     }

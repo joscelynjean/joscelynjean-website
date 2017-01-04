@@ -7,6 +7,7 @@ import { TranslateModule, TranslateStaticLoader, TranslateLoader } from 'ng2-tra
 import { AppComponent } from './app.component';
 import { ProjectComponent } from './project/project.component';
 import { PresentationComponent } from './presentation/presentation.component';
+import { SummaryComponent } from './summary/summary.component';
 
 export function createTranslateLoader(http: Http) {
     return new TranslateStaticLoader(http, '/assets/data', '/translation.json');
@@ -16,7 +17,8 @@ export function createTranslateLoader(http: Http) {
   declarations: [
     AppComponent,
     ProjectComponent,
-    PresentationComponent
+    PresentationComponent,
+    SummaryComponent
   ],
   imports: [
     BrowserModule,
