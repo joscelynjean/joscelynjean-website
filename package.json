@@ -7,7 +7,7 @@
   },
   "angular-cli": {},
   "scripts": {
-    "postinstall" : "./node_modules/angular-cli/bin/ng build --prod",
+    "postinstall": "./node_modules/angular-cli/bin/ng build --prod",
     "start": "node app.js",
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test --watch=false",
@@ -35,6 +35,7 @@
     "@types/jasmine": "^2.2.30",
     "@types/jquery": "^2.0.34",
     "@types/jquery.cookie": "^1.4.28",
+    "@types/materialize-css": "^0.97.33",
     "@types/node": "^6.0.42",
     "angular-cli": "1.0.0-beta.18",
     "codelyzer": "1.0.0-beta.1",
