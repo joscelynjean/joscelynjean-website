@@ -4,7 +4,9 @@
     "location": "Montréal, Québec, Canada"
   },
   "navigation": {
-    "projects": "Projets"
+    "aboutMe": "À propos",
+    "projects": "Projets",
+    "language": "English"
   },
   "footer": {
     "title": "Pour me rejoindre",
