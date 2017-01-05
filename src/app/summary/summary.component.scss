@@ -1,11 +1,9 @@
 @import '../../styles/variables';
 
-#section-summary {
-  margin-top: $headerHeight;
-  /*background: #000000 url("assets/images/background.jpg") no-repeat center center;*/
-  height: 330px;
+.parallax-container {
+  height: 380px;
   color: white;
-  padding-top: 30px;
+  padding-top: 80px;
 }
 
 .content {

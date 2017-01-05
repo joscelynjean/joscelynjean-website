@@ -4,7 +4,9 @@
     "location": "Montreal, Quebec, Canada"
   },
   "navigation": {
-    "projects": "Projects"
+    "aboutMe": "About Me",
+    "projects": "Projects",
+    "language": "Français"
   },
   "footer": {
     "title": "Contact me",
