@@ -1,3 +1,49 @@
-<h1>
-  {{title}}
-</h1>
+<header>
+  <div class="valign-container">
+    <div class="logo"></div>
+    <div>
+      <span class="firstname">Joscelyn</span>
+      <span class="lastname">Jean</span>
+    </div>
+  </div>
+  <div class="menu valign-container">
+    <ul>
+      <li>{{ 'navigation.projects' | translate }}</li>
+      <li>
+        <a id="language-toggle" class="waves-effect waves-light btn" *ngIf="!isEnglishLanguage" (click)="setCurrentLanguage('en')"><i class="material-icons left">language</i>English</a>
+        <a id="language-toggle" class="waves-effect waves-light btn" *ngIf="isEnglishLanguage" (click)="setCurrentLanguage('fr')"><i class="material-icons left">language</i>Français</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+
+
+<app-summary></app-summary>
+<app-presentation></app-presentation>
+<app-project></app-project>
+
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">{{ 'footer.title' | translate }}</h5>
+        <p class="grey-text text-lighten-4">{{ 'footer.description' | translate }}</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">{{ 'footer.contact' | translate }}</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="mailto:info@joscelynjean.com">{{ 'footer.email' | translate }}</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://ca.linkedin.com/in/joscelynjean">{{ 'footer.linkedin' | translate }}</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://twitter.com/joscelynjean">{{ 'footer.twitter' | translate }}</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2016 Joscelyn Jean
+    <span class="right">Version 1.0.0</span>
+    </div>
+  </div>
+</footer>

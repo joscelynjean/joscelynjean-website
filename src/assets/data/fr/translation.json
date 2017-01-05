@@ -1,0 +1,27 @@
+{
+  "header": {
+    "description": "Ingénieur en informatique",
+    "location": "Montréal, Québec, Canada"
+  },
+  "navigation": {
+    "projects": "Projets"
+  },
+  "footer": {
+    "title": "Pour me rejoindre",
+    "description": "Vous pouvez me rejoindre pour des informations sur mes projets, des opportunités et autres.",
+    "contact": "Informations de contact",
+    "email": "info [a] joscelynjean.com",
+    "linkedin": "LinkedIn",
+    "twitter": "Twitter"
+  },
+  "summary": {
+    "aboutMeTitle": "À propos de moi",
+    "aboutMeDescription": "Je suis un passionné de la programmation et des nouvelles technologies, mais je m'intéresse également à l'architecture de système et à la gestion de projets.",
+    "socialNetworkTitle": "Réseaux sociaux"
+  },
+  "project": {
+    "title": "Mes projets",
+    "github": "Mes projets sur Github",
+    "repository": "Repo"
+  }
+}

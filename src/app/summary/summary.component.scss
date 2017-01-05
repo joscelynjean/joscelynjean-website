@@ -1,0 +1,29 @@
+@import '../../styles/variables';
+
+#section-summary {
+  margin-top: $headerHeight;
+  /*background: #000000 url("assets/images/background.jpg") no-repeat center center;*/
+  height: 330px;
+  color: white;
+  padding-top: 30px;
+}
+
+.content {
+
+  h4 {
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px #000000, -1px -1px #000000;
+  }
+
+  h3 {
+    text-shadow: 2px 2px #000000, -1px -1px #000000;
+  }
+
+  img {
+    display: block;
+    width: 128px;
+    height: 128px;
+    margin: auto;
+  }
+
+}

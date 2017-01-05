@@ -1,18 +1,35 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { Http, HttpModule, JsonpModule } from '@angular/http';
+import { TranslateModule, TranslateStaticLoader, TranslateLoader } from 'ng2-translate';
 
 import { AppComponent } from './app.component';
+import { ProjectComponent } from './project/project.component';
+import { PresentationComponent } from './presentation/presentation.component';
+import { SummaryComponent } from './summary/summary.component';
+
+export function createTranslateLoader(http: Http) {
+    return new TranslateStaticLoader(http, '/assets/data', '/translation.json');
+}
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProjectComponent,
+    PresentationComponent,
+    SummaryComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    JsonpModule,
+    TranslateModule.forRoot({
+      provide: TranslateLoader,
+      useFactory: (createTranslateLoader),
+      deps: [Http]
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

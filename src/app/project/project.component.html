@@ -1,0 +1,27 @@
+<div id="section-project-parallax" class="parallax-container">
+  <div class="parallax-content valign-wrapper">
+    <h1 class="valign">{{ 'project.title' | translate }}</h1>
+  </div>
+  <div class="parallax"><img src="assets/images/parallax-projects.jpg" alt=""></div>
+</div>
+
+<div id="section-project">
+  <div class="container">
+    <div class="row">
+      <h4 id="projects"><i class="fa fa-github" aria-hidden="true"></i> {{ 'project.github' | translate }}</h4>
+    </div>
+    <div class="row">
+      <div class="col s12 m6" *ngFor="let project of projects | async">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">{{project.name}}</span>
+            <p>{{project.description}}</p>
+          </div>
+          <div class="card-action">
+            <a href="{{project.html_url}}">{{ 'project.repository' | translate }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
