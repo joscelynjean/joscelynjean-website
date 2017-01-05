@@ -42,3 +42,7 @@ Then, build the docker image and run it.
 
     docker build -t joscelynjean/website:latest
     docker run -p 80:80 --name joscelynjean_website joscelynjean/website
+
+## Todos and improvements
+
+- Add and fix unit testing
