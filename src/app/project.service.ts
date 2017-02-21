@@ -14,7 +14,7 @@ export class ProjectService {
   constructor(private jsonp: Jsonp) { }
 
   getProjects() {
-    let url = 'http://api.github.com/users/joscelynjean/repos?callback=JSONP_CALLBACK';
+    let url = 'https://api.github.com/users/joscelynjean/repos?callback=JSONP_CALLBACK';
     return this.jsonp
       .get(url)
       .toPromise()
