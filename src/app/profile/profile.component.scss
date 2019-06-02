@@ -1,0 +1,9 @@
+$image_size: 150px;
+
+img {
+  border-radius: 50%;
+  margin-top: -($image_size / 2);
+  width: $image_size;
+  height: $image_size;
+  border: 5px solid white;
+}
