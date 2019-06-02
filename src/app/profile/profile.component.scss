@@ -1,9 +1,8 @@
-$image_size: 150px;
+$image-size: 150px;
 
 img {
-  border-radius: 50%;
-  margin-top: -($image_size / 2);
-  width: $image_size;
-  height: $image_size;
   border: 5px solid white;
+  width: $image-size;
+  height: $image-size;
+  margin-top: -50px;
 }

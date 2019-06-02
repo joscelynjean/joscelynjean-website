@@ -1,3 +1,5 @@
+import { AppMaterialModule } from './app-material.module';
+import { AppBootstrapModule } from './app-bootstrap.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -17,6 +19,8 @@ import { ProfileComponent } from './profile/profile.component';
   ],
   imports: [
     BrowserModule,
+    AppBootstrapModule,
+    AppMaterialModule,
     AppRoutingModule,
     BrowserAnimationsModule
   ],
