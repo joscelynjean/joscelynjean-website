@@ -1,0 +1,18 @@
+<div id="project-summary" class="text-left">
+  <div class="container">
+    <h1>My Github projects</h1>
+    <div class="row">
+      <div *ngFor="let project of githubProjects" class="col-lg-4 col-md-6 col-sm-12">
+        <mat-card class="mb-2">
+          <mat-card-title>{{project.name}}</mat-card-title>
+          <mat-card-content>
+            <p>{{project.description}}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <a [attr.href]="project.html_url" mat-button>REPOSITORY</a>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>

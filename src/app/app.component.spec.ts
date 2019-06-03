@@ -1,4 +1,3 @@
-import { ProfileComponent } from './profile/profile.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { HeaderComponent } from './core/header/header.component';
 import { TestBed, async } from '@angular/core/testing';
@@ -15,7 +14,6 @@ describe('AppComponent', () => {
         AppComponent,
         HeaderComponent,
         FooterComponent,
-        ProfileComponent
       ],
     }).compileComponents();
   }));
