@@ -7,9 +7,10 @@
           <mat-card-title>{{project.name}}</mat-card-title>
           <mat-card-content>
             <p>{{project.description}}</p>
+            <mat-divider></mat-divider>
           </mat-card-content>
           <mat-card-actions>
-            <a [attr.href]="project.html_url" mat-button>REPOSITORY</a>
+            <button [attr.href]="project.html_url" mat-button color="primary">REPOSITORY</button>
           </mat-card-actions>
         </mat-card>
       </div>

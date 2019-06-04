@@ -34,15 +34,9 @@ $joscelynjean-website-theme: mat-light-theme(
 
 /* You can add global styles to this file, and also import other style files */
 
-html,
-body {
-  height: 100%;
-}
-body {
-  margin: 0;
-  font-family: Roboto-Thin, sans-serif;
-  text-align: center;
-}
-
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto-Thin, "Helvetica Neue", sans-serif; }
+
+button:focus {
+    outline:none !important;
+}
