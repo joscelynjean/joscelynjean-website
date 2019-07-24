@@ -1,3 +1,4 @@
+import { CommunityModule } from './../community/community.module';
 import { AppMaterialModule } from './../app-material.module';
 import { ProfileModule } from './../profile/profile.module';
 import { NgModule } from '@angular/core';
@@ -13,6 +14,7 @@ import { ProjectModule } from '../projects/project.module';
     AppMaterialModule,
     SummaryRoutingModule,
     ProfileModule,
+    CommunityModule,
     ProjectModule
   ]
 })
