@@ -1,3 +1,13 @@
 #project-summary {
   background-color: lightgray;
 }
+
+mat-card-title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+p {
+  height: 50px;
+}
