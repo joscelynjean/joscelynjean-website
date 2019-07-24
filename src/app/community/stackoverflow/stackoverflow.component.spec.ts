@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { StackoverflowComponent } from './stackoverflow.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { AppMaterialModule } from 'src/app/app-material.module';
 
 describe('StackoverflowComponent', () => {
   let component: StackoverflowComponent;
@@ -8,9 +10,10 @@ describe('StackoverflowComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ StackoverflowComponent ]
+      declarations: [StackoverflowComponent],
+      imports: [AppMaterialModule, HttpClientTestingModule]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

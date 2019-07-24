@@ -2,6 +2,10 @@
   <mat-card class="mb-2">
     <mat-card-content>
       <p>{{post.title}}</p>
+      <mat-divider></mat-divider>
     </mat-card-content>
+    <mat-card-actions>
+      <a [attr.href]="post.link" mat-button color="primary">View the post</a>
+    </mat-card-actions>
   </mat-card>
 </div>

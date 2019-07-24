@@ -1,3 +1,4 @@
+import { CommunityModule } from './../../../community/community.module';
 import { AppMaterialModule } from './../../../app-material.module';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
@@ -12,7 +13,7 @@ describe('SummaryComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule, AppMaterialModule, ProfileModule, ProjectModule],
+      imports: [HttpClientTestingModule, AppMaterialModule, ProfileModule, ProjectModule, CommunityModule],
       declarations: [SummaryComponent]
     })
       .compileComponents();
