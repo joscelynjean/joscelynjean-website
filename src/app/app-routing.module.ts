@@ -7,7 +7,10 @@ const routes: Routes = [
 
 const routerOptions: ExtraOptions = {
   useHash: false,
-  anchorScrolling: 'enabled'
+  // Scroll to element when using bookmarks
+  anchorScrolling: 'enabled',
+  // Allow anchor to work when clicking the same link more than one time in a row
+  onSameUrlNavigation: 'reload'
 };
 
 @NgModule({
