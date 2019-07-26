@@ -1,3 +1,4 @@
+import { CoreModule } from './core/core.module';
 import { SummaryModule } from './modules/summary/summary.module';
 import { ProjectModule } from './modules/projects/project.module';
 import { ProfileModule } from './modules/profile/profile.module';
@@ -9,15 +10,11 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './core/header/header.component';
-import { FooterComponent } from './core/footer/footer.component';
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -28,6 +25,7 @@ import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
     HttpClientModule,
     HttpClientJsonpModule,
     // Application specific
+    CoreModule,
     ProfileModule,
     ProjectModule,
     SummaryModule,
