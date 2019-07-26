@@ -41,6 +41,9 @@ yarn-error.log
 testem.log
 /typings
 
+# Remove because using yarn
+package-lock.json
+
 # System Files
 .DS_Store
 Thumbs.db
