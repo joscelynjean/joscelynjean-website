@@ -40,3 +40,10 @@ body { margin: 0; font-family: Roboto-Thin, "Helvetica Neue", sans-serif; }
 button:focus {
     outline:none !important;
 }
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -56px;
+  visibility: hidden;
+}

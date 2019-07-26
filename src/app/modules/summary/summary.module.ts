@@ -1,5 +1,5 @@
 import { CommunityModule } from './../community/community.module';
-import { AppMaterialModule } from './../app-material.module';
+import { AppMaterialModule } from './../../app-material.module';
 import { ProfileModule } from './../profile/profile.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';

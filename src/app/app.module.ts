@@ -1,6 +1,6 @@
-import { SummaryModule } from './summary/summary.module';
-import { ProjectModule } from './projects/project.module';
-import { ProfileModule } from './profile/profile.module';
+import { SummaryModule } from './modules/summary/summary.module';
+import { ProjectModule } from './modules/projects/project.module';
+import { ProfileModule } from './modules/profile/profile.module';
 import { AppMaterialModule } from './app-material.module';
 import { AppBootstrapModule } from './app-bootstrap.module';
 import { BrowserModule } from '@angular/platform-browser';
