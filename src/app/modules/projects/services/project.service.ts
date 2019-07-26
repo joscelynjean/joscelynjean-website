@@ -1,4 +1,4 @@
-import { GithubProject } from './github-project';
+import { GithubProject } from '../models/github-project';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';

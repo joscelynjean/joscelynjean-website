@@ -1,5 +1,5 @@
-import { StackoverflowService } from './stackoverflow.service';
-import { StackoverflowPost } from './stackoverflow-post';
+import { StackoverflowService } from '../../services/community.service';
+import { StackoverflowPost } from '../../models/stack-overflow-post';
 import { Component, OnInit } from '@angular/core';
 
 @Component({

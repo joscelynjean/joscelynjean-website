@@ -1,5 +1,5 @@
-import { ProjectService } from './../project.service';
-import { GithubProject } from './../github-project';
+import { ProjectService } from '../../../services/project.service';
+import { GithubProject } from '../../../models/github-project';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
