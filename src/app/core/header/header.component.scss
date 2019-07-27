@@ -16,3 +16,62 @@ header {
   height: 32px;
   background-image: url('../../../assets/images/logo.png');
 }
+
+
+
+
+ul {
+  list-style-type: none;
+}
+
+@media screen and (min-width: 756px) {
+
+  ul {
+    visibility: visible;
+  }
+  li {
+    display: inline;
+  }
+
+}
+
+@media screen and (max-width: 755px) {
+
+  ul {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.95);
+    text-align: right;
+
+    // Padding to align the X and the items
+    padding-top: 16px;
+    padding-right: 26px;
+
+    // Make it black everywhere
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  ul::before {
+    cursor: pointer;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f00d";
+  }
+
+  #menu::before {
+    // Font awesome
+    cursor: pointer;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0c9";
+  }
+
+}

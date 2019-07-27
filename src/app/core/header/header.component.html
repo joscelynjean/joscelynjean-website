@@ -2,12 +2,14 @@
   <div class="row no-gutters h-100 align-items-center">
     <div class="logo ml-4 mr-2"></div>
     <div>JOSCELYN JEAN</div>
-    <div class="ml-auto mr-4">
-      <a mat-button routerLink="summary" fragment="profile">About me</a>
-      <a mat-button routerLink="summary" fragment="community">Community</a>
-      <a mat-button routerLink="summary" fragment="projects">Projects</a>
-      <a mat-button routerLink="summary" fragment="contact">Contact</a>
-      <!-- <a mat-raised-button color="primary" class="ml-3">Français</a> -->
+    <div id="menu" class="ml-auto mr-4" (click)="onMenuClick()">
+      <ul class="my-auto" [style.visibility]="showMenu ? 'visible' : 'hidden'" #menuItems>
+        <li><a mat-button routerLink="summary" fragment="profile">About me</a></li>
+        <li><a mat-button routerLink="summary" fragment="community">Community</a></li>
+        <li><a mat-button routerLink="summary" fragment="projects">Projects</a></li>
+        <li><a mat-button routerLink="summary" fragment="contact">Contact</a></li>
+        <!-- <li><a mat-raised-button color="primary" class="ml-3">Français</a></li> -->
+      </ul>
     </div>
   </div>
 </header>
