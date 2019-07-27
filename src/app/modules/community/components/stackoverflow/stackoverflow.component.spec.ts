@@ -1,3 +1,4 @@
+import { CommunityTestingModule } from './../../tests/community-testing.module';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { StackoverflowComponent } from './stackoverflow.component';
@@ -11,7 +12,7 @@ describe('StackoverflowComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [StackoverflowComponent],
-      imports: [AppMaterialModule, HttpClientTestingModule]
+      imports: [AppMaterialModule, HttpClientTestingModule, CommunityTestingModule]
     })
       .compileComponents();
   }));
@@ -24,5 +25,9 @@ describe('StackoverflowComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should loads stack overflow posts during init', () => {
+    expect(component.stackOverflowPosts.length).toBe(2);
   });
 });

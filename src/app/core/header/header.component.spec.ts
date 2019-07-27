@@ -55,6 +55,11 @@ describe('HeaderComponent', () => {
     // Click on the menu shouldn't affect visibility
     component.onMenuClick();
     expect(component.showMenu).toBeTruthy();
+
+    // Resize to desktop
+    component.onResize({ target: { innerWidth: 757 } });
+    expect(component.isMobile).toBeFalsy();
+    expect(component.showMenu).toBeTruthy();
   });
 
 });
