@@ -1,7 +1,7 @@
 <div *ngFor="let post of stackOverflowPosts">
   <mat-card class="mb-2">
     <mat-card-content>
-      <p>{{post.title}}</p>
+      <p [innerHtml]='post.title | safeHtml'></p>
       <mat-divider></mat-divider>
     </mat-card-content>
     <mat-card-actions>
