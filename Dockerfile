@@ -10,7 +10,7 @@ COPY . /usr/src/app
 # Install all dependencies
 RUN yarn install
 # Build the application
-RUN ./node_modules/.bin/ng build
+RUN yarn build:prod
 
 ###############################################
 # The actual image which serve the files
@@ -19,3 +19,6 @@ RUN ./node_modules/.bin/ng build
 FROM nginx
 # Copy dist generated from the previous container
 COPY --from=builder /usr/src/app/dist/joscelynjean-website /usr/share/nginx/html
+# Copy nginx configuration
+COPY ./docker/nginx.conf /etc/nginx/nginx.conf
+EXPOSE 80
