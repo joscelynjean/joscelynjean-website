@@ -1,64 +1,20 @@
 <!doctype html>
-<html>
+<html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <title>Joscelyn Jean</title>
+  <title>Joscelyn Jean Personal Website</title>
   <base href="/">
 
-  <link rel="icon" type="image/png" href="assets/images/logo.png">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-  <script src="assets/js/jquery.cookie.js"></script>
-  <script src="https://use.fontawesome.com/358a8da2a1.js"></script>
-
+  <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </head>
-<body class="blue-grey lighten-5">
-  <app-root>
-    <div class="center-align" style="margin: 0 auto; padding-top: 200px;">
-      <div class="preloader-wrapper active">
-        <div class="spinner-layer spinner-blue-only">
-          <div class="circle-clipper left">
-            <div class="circle"></div>
-          </div><div class="gap-patch">
-            <div class="circle"></div>
-          </div><div class="circle-clipper right">
-            <div class="circle"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </app-root>
 
-  <script>
-
-    // Menu handling and media query change listener
-    var isMobile = false;
-    var handleMediaChange = function (mediaQueryList) {
-        if (mediaQueryList.matches) {
-            isMobile = true;
-            $(".menu ul").hide();
-        } else {
-            isMobile = false;
-            $(".menu ul").show();
-        }
-    }
-
-    var mql = window.matchMedia("(max-width: 755px)");
-    mql.addListener(handleMediaChange);
-    handleMediaChange(mql);
-
-    function toggleMenu() {
-      if(isMobile) {
-        $(".menu ul").fadeToggle();
-      }
-    }
-
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<body>
+  <app-root></app-root>
 </body>
+
 </html>

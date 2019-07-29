@@ -1,8 +1,35 @@
 dist: trusty
+sudo: false
+
+env:
+  global:
+    - CC_TEST_REPORTER_ID=79d87eef6dec70851c4c975a20b761a6230d893d3e58d974a700a3f979b5a962
+
 language: node_js
 node_js:
-  - "6.1"
+  - '10'
+
+addons:
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
+
+cache:
+  directories:
+    - ./node_modules
+
+install:
+  - yarn install
+
 before_script:
-  - npm install -g buffer-shims
-  - npm install -g angular-cli
-script: ng test --watch=false --browsers=PhantomJS
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+
+script:
+  - npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
+
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
