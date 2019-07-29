@@ -1,35 +1,34 @@
+import { CoreModule } from './core/core.module';
+import { SummaryModule } from './modules/summary/summary.module';
+import { ProjectModule } from './modules/projects/project.module';
+import { ProfileModule } from './modules/profile/profile.module';
+import { AppMaterialModule } from './app-material.module';
+import { AppBootstrapModule } from './app-bootstrap.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { Http, HttpModule, JsonpModule } from '@angular/http';
-import { TranslateModule, TranslateStaticLoader, TranslateLoader } from 'ng2-translate';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProjectComponent } from './project/project.component';
-import { PresentationComponent } from './presentation/presentation.component';
-import { SummaryComponent } from './summary/summary.component';
-
-export function createTranslateLoader(http: Http) {
-    return new TranslateStaticLoader(http, '/assets/data', '/translation.json');
-}
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ProjectComponent,
-    PresentationComponent,
-    SummaryComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    HttpModule,
-    JsonpModule,
-    TranslateModule.forRoot({
-      provide: TranslateLoader,
-      useFactory: (createTranslateLoader),
-      deps: [Http]
-    })
+    AppBootstrapModule,
+    AppMaterialModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    HttpClientJsonpModule,
+    // Application specific
+    CoreModule,
+    ProfileModule,
+    ProjectModule,
+    SummaryModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

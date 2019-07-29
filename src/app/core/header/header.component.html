@@ -1,0 +1,15 @@
+<header>
+  <div class="row no-gutters h-100 align-items-center">
+    <div class="logo ml-4 mr-2"></div>
+    <div>JOSCELYN JEAN</div>
+    <div id="menu" class="ml-auto mr-4" (click)="onMenuClick()">
+      <ul class="my-auto" [style.visibility]="showMenu ? 'visible' : 'hidden'" #menuItems>
+        <li><a mat-button routerLink="./" fragment="profile">About me</a></li>
+        <li><a mat-button routerLink="./" fragment="community">Community</a></li>
+        <li><a mat-button routerLink="./" fragment="projects">Projects</a></li>
+        <li><a mat-button routerLink="./" fragment="contact">Contact</a></li>
+        <!-- <li><a mat-raised-button color="primary" class="ml-3">Français</a></li> -->
+      </ul>
+    </div>
+  </div>
+</header>
