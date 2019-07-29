@@ -59,6 +59,6 @@
     "typescript": "~3.2.2"
   },
   "resolutions": {
-    "lodash": "4.17.13"
+    "lodash": "4.17.15"
   }
 }
