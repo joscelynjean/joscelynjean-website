@@ -16,7 +16,7 @@ export interface IProjectService {
 })
 export class ProjectService implements IProjectService {
 
-  gitHubUrl = 'http://api.github.com/users/joscelynjean/repos?callback=JSONP_CALLBACK';
+  gitHubUrl = 'https://api.github.com/users/joscelynjean/repos?callback=JSONP_CALLBACK';
 
   constructor(private http: HttpClient) { }
 
