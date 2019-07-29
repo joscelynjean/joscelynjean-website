@@ -1,3 +1,6 @@
+/**
+ * Represent a GitHub project.
+ */
 export interface GithubProject {
   name: string;
   description: string;

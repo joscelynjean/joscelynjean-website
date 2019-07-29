@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+/**
+ * Footer component. This control the footer behavior.
+ */
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',

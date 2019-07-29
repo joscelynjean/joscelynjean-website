@@ -8,6 +8,9 @@ export interface IProjectService {
   getGithubProjects(): Observable<GithubProject[]>;
 }
 
+/**
+ * Service related to projects.
+ */
 @Injectable({
   providedIn: 'root'
 })
@@ -17,6 +20,9 @@ export class ProjectService implements IProjectService {
 
   constructor(private http: HttpClient) { }
 
+  /**
+   * Get all github projects.
+   */
   public getGithubProjects(): Observable<GithubProject[]> {
     return this.http.jsonp<any>(this.gitHubUrl, 'JSONP_CALLBACK').pipe(
       map<any, GithubProject[]>(value => value.data)

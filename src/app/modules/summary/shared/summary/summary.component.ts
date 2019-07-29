@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+/**
+ * Component used to assemble everything that is summarize.
+ */
 @Component({
   selector: 'app-summary',
   templateUrl: './summary.component.html',

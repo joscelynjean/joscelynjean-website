@@ -2,6 +2,9 @@ import { ProjectService } from '../../../services/project.service';
 import { GithubProject } from '../../../models/github-project';
 import { Component, OnInit } from '@angular/core';
 
+/**
+ * Component used to display.
+ */
 @Component({
   selector: 'app-project-summary',
   templateUrl: './project-summary.component.html',
