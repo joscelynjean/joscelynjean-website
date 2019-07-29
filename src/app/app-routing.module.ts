@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, ExtraOptions } from '@angular/router';
+import { SummaryComponent } from './modules/summary/shared/summary/summary.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/summary', pathMatch: 'full' },
+  // { path: '', redirectTo: '/summary', pathMatch: 'full' },
+  { path: '', component: SummaryComponent }
 ];
 
 const routerOptions: ExtraOptions = {
