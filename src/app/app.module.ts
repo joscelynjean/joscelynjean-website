@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
+import { ArticlesModule } from './modules/articles/articles.module';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
     ProfileModule,
     ProjectModule,
     SummaryModule,
+    ArticlesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
