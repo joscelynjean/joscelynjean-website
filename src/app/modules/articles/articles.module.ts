@@ -1,3 +1,4 @@
+import { MarkdownModule } from 'ngx-markdown';
 import { ArticleDisplayComponent } from './article-display/article-display.component';
 import { ArticleRoutingModule } from './articles-router.module';
 import { ArticleListComponent } from './article-list/article-list.component';
@@ -8,7 +9,8 @@ import { CommonModule } from '@angular/common';
   declarations: [ArticleListComponent, ArticleDisplayComponent],
   imports: [
     CommonModule,
-    ArticleRoutingModule
+    ArticleRoutingModule,
+    MarkdownModule
   ]
 })
 export class ArticlesModule { }

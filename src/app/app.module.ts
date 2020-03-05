@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { ArticlesModule } from './modules/articles/articles.module';
+import { MarkdownModule } from 'ngx-markdown';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ArticlesModule } from './modules/articles/articles.module';
     BrowserAnimationsModule,
     HttpClientModule,
     HttpClientJsonpModule,
+    MarkdownModule.forRoot(),
     // Application specific
     CoreModule,
     ProfileModule,
