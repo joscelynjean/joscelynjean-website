@@ -15,6 +15,7 @@ export class ArticleDisplayComponent implements OnInit {
   markdownFilePath = '';
 
   articleId = '';
+  disqusId = '';
   loaded = false;
 
   constructor(private route: ActivatedRoute, private articleService: ArticleService) { }
@@ -32,6 +33,7 @@ export class ArticleDisplayComponent implements OnInit {
     this.title = article.title;
     this.mainImagePath = `./assets/articles/${article.contentPath}/main.jpg`;
     this.markdownFilePath = `assets/articles/${article.contentPath}/article.md`;
+    this.disqusId = `/articles/${this.articleId}`;
     console.log(this.markdownFilePath);
   }
 

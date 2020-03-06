@@ -4,4 +4,6 @@
     articles</a>
   <h1 class="font-weight-bold py-2">{{title}}</h1>
   <markdown *ngIf="loaded" [src]='markdownFilePath' lineNumbers></markdown>
+  <div class="my-5"></div>
+  <disqus class="py-5" *ngIf="loaded" [identifier]="disqusId"></disqus>
 </div>

@@ -1,3 +1,4 @@
+import { DisqusModule } from 'ngx-disqus';
 import { AppMaterialModule } from 'src/app/app-material.module';
 import { MarkdownModule } from 'ngx-markdown';
 import { ArticleDisplayComponent } from './article-display/article-display.component';
@@ -12,7 +13,8 @@ import { CommonModule } from '@angular/common';
     CommonModule,
     ArticleRoutingModule,
     MarkdownModule,
-    AppMaterialModule
+    AppMaterialModule,
+    DisqusModule
   ]
 })
 export class ArticlesModule { }

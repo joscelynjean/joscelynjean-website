@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { ArticlesModule } from './modules/articles/articles.module';
 import { MarkdownModule } from 'ngx-markdown';
+import { DisqusModule } from 'ngx-disqus';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { MarkdownModule } from 'ngx-markdown';
     HttpClientModule,
     HttpClientJsonpModule,
     MarkdownModule.forRoot(),
+    DisqusModule.forRoot('joscelyn-jean'),
     // Application specific
     CoreModule,
     ProfileModule,
