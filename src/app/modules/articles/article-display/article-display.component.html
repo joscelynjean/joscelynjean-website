@@ -1,4 +1,7 @@
-<p>
-  article-display works!
-</p>
-<markdown [src]="/assets/articles/2020-03-04_unit-testing/article.md" lineNumbers [start]="5"></markdown>
+<div class="main-image align-middle" [style.background]="'url(' + mainImagePath + ')'"></div>
+<div class="container py-3 text-left">
+  <a mat-button routerLink="/articles" color="primary"><i class="fas fa-long-arrow-alt-left mr-2"></i>Go back to
+    articles</a>
+  <h1 class="font-weight-bold py-2">{{title}}</h1>
+  <markdown *ngIf="loaded" [src]='markdownFilePath' lineNumbers></markdown>
+</div>

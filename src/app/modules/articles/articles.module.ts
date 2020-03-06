@@ -1,3 +1,4 @@
+import { AppMaterialModule } from 'src/app/app-material.module';
 import { MarkdownModule } from 'ngx-markdown';
 import { ArticleDisplayComponent } from './article-display/article-display.component';
 import { ArticleRoutingModule } from './articles-router.module';
@@ -10,7 +11,8 @@ import { CommonModule } from '@angular/common';
   imports: [
     CommonModule,
     ArticleRoutingModule,
-    MarkdownModule
+    MarkdownModule,
+    AppMaterialModule
   ]
 })
 export class ArticlesModule { }
