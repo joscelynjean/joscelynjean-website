@@ -16,7 +16,8 @@
   "private": true,
   "husky": {
     "hooks": {
-      "pre-push": "npm test -- --watch=false"
+      "pre-commit": "npm run prettier:fix && npm run lint:fix",
+      "pre-push": "npm run prettier && npm run lint && npm test -- --watch=false"
     }
   },
   "dependencies": {
