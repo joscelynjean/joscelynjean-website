@@ -1,0 +1,35 @@
+<div id="articles">
+  <div class="container py-3 text-left">
+    <h1 class="mb-4"><i class="far fa-newspaper mr-3"></i>Articles</h1>
+    <p>
+      You will find all my articles here.
+    </p>
+    <!-- Spinner -->
+    <div *ngIf="!articleListLoaded" class="d-flex justify-content-center">
+      <mat-progress-spinner class="my-2" color="primary" mode="indeterminate" diameter="50"></mat-progress-spinner>
+    </div>
+    <!-- Article list -->
+    <div *ngIf="articleListLoaded">
+      <!-- Error if empty -->
+      <div *ngIf="articles.length == 0" class="d-flex justify-content-center">
+        <h3 class="my-2">There is no article right now. Come back later.</h3>
+      </div>
+      <div class="row">
+        <div *ngFor="let article of articles" class="col-lg-4 col-md-6 col-sm-12 px-md-1">
+          <mat-card class="mb-2">
+            <mat-card-header>
+              <mat-card-title>{{article.title}}</mat-card-title>
+              <mat-card-subtitle>{{article.publishedDate}}</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image [src]="'/assets/articles/' + article.contentPath + '/main.jpg'">
+            <mat-card-actions>
+              <a [routerLink]="['/articles', article.contentPath]" mat-button color="primary">
+                <i class="fas fa-book-reader mr-2 mb-1"></i>Read the article</a>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

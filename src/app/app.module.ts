@@ -11,6 +11,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
+import { ArticlesModule } from './modules/articles/articles.module';
+import { MarkdownModule } from 'ngx-markdown';
+import { DisqusModule } from 'ngx-disqus';
 
 @NgModule({
   declarations: [
@@ -24,11 +27,14 @@ import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
     BrowserAnimationsModule,
     HttpClientModule,
     HttpClientJsonpModule,
+    MarkdownModule.forRoot(),
+    DisqusModule.forRoot('joscelyn-jean'),
     // Application specific
     CoreModule,
     ProfileModule,
     ProjectModule,
     SummaryModule,
+    ArticlesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
