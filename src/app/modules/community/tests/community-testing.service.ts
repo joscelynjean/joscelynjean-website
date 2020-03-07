@@ -1,7 +1,7 @@
-import { ICommunityService } from './../services/community.service';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { StackOverflowPost } from '../models/stack-overflow-post';
+import { ICommunityService } from './../services/community.service';
 
 export const mockedPosts: StackOverflowPost[] = [{
   title: 'Post 1',

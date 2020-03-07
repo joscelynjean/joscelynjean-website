@@ -1,9 +1,9 @@
-import { AppMaterialModule } from './../../../../../app-material.module';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { AppMaterialModule } from './../../../../../app-material.module';
 
-import { ProjectSummaryComponent } from './project-summary.component';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ProjectTestingModule } from '../../../tests/project-testing.module';
+import { ProjectSummaryComponent } from './project-summary.component';
 
 describe('ProjectSummaryComponent', () => {
   let component: ProjectSummaryComponent;

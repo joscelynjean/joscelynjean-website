@@ -1,8 +1,8 @@
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
 
-import { CommunityService } from './community.service';
 import { mockedPosts } from '../tests/community-testing.service';
+import { CommunityService } from './community.service';
 
 describe('CommunityService', () => {
   let service: CommunityService;

@@ -1,8 +1,8 @@
-import { TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
+import { TestBed } from '@angular/core/testing';
 
-import { ProjectService } from './project.service';
 import { mockedProjects } from '../tests/project-testing.service';
+import { ProjectService } from './project.service';
 
 describe('ProjectService', () => {
   let service: ProjectService;

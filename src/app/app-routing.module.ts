@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule, ExtraOptions } from '@angular/router';
+import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { SummaryComponent } from './modules/summary/shared/summary/summary.component';
 
 const routes: Routes = [

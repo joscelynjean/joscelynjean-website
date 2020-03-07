@@ -1,11 +1,11 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
-import { AppMaterialModule } from './../../../../app-material.module';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { AppMaterialModule } from './../../../../app-material.module';
 
-import { CommunitySummaryComponent } from './community-summary.component';
 import { StackoverflowComponent } from '../../components/stackoverflow/stackoverflow.component';
 import { TwitterComponent } from '../../components/twitter/twitter.component';
 import { CommunityTestingModule } from '../../tests/community-testing.module';
+import { CommunitySummaryComponent } from './community-summary.component';
 
 describe('CommunitySummaryComponent', () => {
   let component: CommunitySummaryComponent;
