@@ -11,7 +11,8 @@
     "lint:fix": "ng lint --fix",
     "e2e": "ng e2e",
     "prettier": "prettier --check **/*.ts",
-    "prettier:fix": "prettier --write **/*.ts"
+    "prettier:fix": "prettier --write **/*.ts",
+    "gh-pages:publish": "./src/scripts/github-pages-publish.sh"
   },
   "private": true,
   "husky": {
