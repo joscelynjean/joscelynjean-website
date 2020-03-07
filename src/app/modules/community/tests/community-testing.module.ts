@@ -1,8 +1,8 @@
-import { CommunityTestingService } from './community-testing.service';
-import { CommunityService } from './../services/community.service';
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { SafeHtmlPipe } from '../components/stackoverflow/safe-html.pipe';
+import { CommunityService } from './../services/community.service';
+import { CommunityTestingService } from './community-testing.service';
 
 @NgModule({
   declarations: [SafeHtmlPipe],

@@ -1,8 +1,8 @@
-import { GithubProject } from '../models/github-project';
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { GithubProject } from '../models/github-project';
 
 export interface IProjectService {
   getGithubProjects(): Observable<GithubProject[]>;

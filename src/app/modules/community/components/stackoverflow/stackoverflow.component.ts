@@ -1,6 +1,6 @@
-import { CommunityService } from '../../services/community.service';
-import { StackOverflowPost } from '../../models/stack-overflow-post';
 import { Component, OnInit } from '@angular/core';
+import { StackOverflowPost } from '../../models/stack-overflow-post';
+import { CommunityService } from '../../services/community.service';
 
 /**
  * Stack overflot component. Used to render cards for each posts.

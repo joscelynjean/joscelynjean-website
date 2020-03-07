@@ -1,6 +1,6 @@
-import { SafeHtmlPipe } from './safe-html.pipe';
-import { DomSanitizer } from '@angular/platform-browser';
 import { async, TestBed } from '@angular/core/testing';
+import { DomSanitizer } from '@angular/platform-browser';
+import { SafeHtmlPipe } from './safe-html.pipe';
 
 describe('SafeHtmlPipe', () => {
   let domSanitizer: DomSanitizer;

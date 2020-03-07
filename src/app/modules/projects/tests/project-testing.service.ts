@@ -1,6 +1,6 @@
-import { GithubProject } from '../models/github-project';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
+import { GithubProject } from '../models/github-project';
 import { IProjectService } from '../services/project.service';
 
 export const mockedProjects: GithubProject[] = [

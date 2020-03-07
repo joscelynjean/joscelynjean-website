@@ -1,9 +1,9 @@
-import { CommunityTestingModule } from './../../tests/community-testing.module';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { CommunityTestingModule } from './../../tests/community-testing.module';
 
-import { StackoverflowComponent } from './stackoverflow.component';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { AppMaterialModule } from 'src/app/app-material.module';
+import { StackoverflowComponent } from './stackoverflow.component';
 
 describe('StackoverflowComponent', () => {
   let component: StackoverflowComponent;
