@@ -10,6 +10,8 @@ Hmm
 
 ok
 
+![alt text](/assets/articles/2020-03-04_unit-testing/main.jpg "Image quelconque")
+
 ```java
 class Test {
 
