@@ -1,0 +1,9 @@
+<div class="main-image align-middle" [style.background]="'url(' + mainImagePath + ')'"></div>
+<div class="container py-3 text-left">
+  <a mat-button routerLink="/articles" color="primary"><i class="fas fa-long-arrow-alt-left mr-2"></i>Go back to
+    articles</a>
+  <h1 class="font-weight-bold py-2">{{title}}</h1>
+  <markdown *ngIf="loaded" [src]='markdownFilePath' lineNumbers></markdown>
+  <div class="my-5"></div>
+  <disqus class="py-5" *ngIf="loaded" [identifier]="disqusId"></disqus>
+</div>
